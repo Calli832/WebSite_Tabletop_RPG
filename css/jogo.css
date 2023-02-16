@@ -1,0 +1,305 @@
+* {
+  overflow: hidden;
+  font-family: "Arial";
+}
+body {
+  background-color: #04182c;
+  font-weight: bold;
+}
+
+.box {
+  padding: 20px 40px;
+}
+
+.areaJogo {
+  background-image: url("../assets/img/game/winter.png");
+  width: 100vw;
+  height: 90vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+
+.acoes {
+  display: flex;
+  justify-content: space-between;
+  max-width: 70vw;
+  padding-top: 2vh;
+}
+
+.acoes div {
+  background-color: #0e3d6d;
+  padding: 8px;
+  border-radius: 50%;
+}
+
+.acoes-chat {
+  cursor: pointer;
+}
+
+.utilidades {
+  display: flex;
+  gap: 3vw;
+}
+
+.utilidades .img-perfil {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 5px;
+}
+
+.utilidades .img-perfil .perfil {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.utilidades .habilidades {
+  display: flex;
+  gap: 15px;
+  align-items: flex-end;
+  padding-bottom: 3vh;
+}
+
+.utilidades .habilidades .magic {
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 5px;
+  width: 40px;
+  height: 40px;
+}
+
+.chat {
+  background-color: rgba(216, 193, 10, 0.9);
+  width: 25vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.chat .input {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  padding: 10px 0;
+  bottom: 0;
+  background-color: #0e3d6d;
+  width: 100%;
+}
+
+.chat .input .dado {
+  width: 30px;
+  height: 30px;
+}
+
+.chat .input .dado img {
+  width: 100%;
+}
+
+.chat .input input {
+  width: 16vw;
+  background-color: transparent;
+  padding: 5px;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 1.1rem;
+}
+
+.oculto {
+  display: none !important;
+}
+
+#player {
+  position: absolute;
+  margin-left: 40%;
+  margin-top: 20%;
+}
+
+p.item {
+  padding: 2px 10px;
+  color: #fff;
+  font-family: "Arial";
+  font-size: 1.2rem;
+}
+
+button.edit {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+#menuDados {
+  position: absolute;
+  top: 75%;
+  left: 5%;
+  background-color: rgba(14, 61, 109, 0.9);
+  border-radius: 5px;
+  display: flex;
+  padding: 10px;
+  color: #fff;
+  align-items: center;
+  gap: 20px;
+}
+
+#menuDados img {
+  width: 2vw;
+}
+
+#menuDados .dado {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+#output {
+  max-height: 95%;
+  overflow-y: auto;
+}
+
+.modal-mapas {
+  background-color: #0e3d6d;
+  width: 500px;
+  height: 230px;
+  position: absolute;
+  left: 30%;
+  bottom: 30%;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 10px;
+}
+
+.mapa-fundo {
+  width: 150px;
+}
+
+.mapa-fundo img {
+  width: 100%;
+  cursor: pointer;
+}
+
+button#trocaMapa {
+  background-color: #04182c;
+  color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+
+img.borda {
+  border-radius: 10px;
+  height: 82px;
+}
+
+.utilidades .img-perfil .vida {
+  background-color: #41f44a;
+  color: white;
+  border-radius: 10px;
+  display: flex;
+  width: 90px;
+  padding: 5px 3px;
+  margin: 0 auto;
+}
+
+.utilidades .img-perfil .vida span {
+  border-right: 2px solid #fff;
+  transform: rotate(18deg);
+  height: 15px;
+  margin-top: 2px;
+}
+
+input[type="number"] {
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
+  appearance: textfield;
+  border: none;
+  background-color: transparent;
+  color: white;
+  outline: none;
+  text-align: center;
+  font-size: 1rem;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+.uploadImg {
+  grid-column-start: 2;
+  margin: 0 auto;
+}
+
+input#picture_input {
+  display: none;
+}
+
+.uploadImg label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.uploadImg label span {
+  font-size: 1.1rem;
+  color: #fff;
+  background-color: #04182c;
+  padding: 5px;
+  font-family: "Arial", sans-serif;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.ficha-player {
+  background-color: #dac61f;
+  width: 180px;
+  height: 260px;
+  position: absolute;
+  left: 10px;
+  bottom: 250px;
+  border-radius: 10px;
+  color: #fff;
+}
+
+.ficha-player .ficha {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.ficha .atributo {
+  display: flex;
+  padding: 2px 10px;
+}
+
+.ficha p {
+  text-align: center;
+  background-color: #0e3d6d;
+  padding: 10px;
+  margin: 0;
+}
+
+.ficha .atributo input {
+  text-align: end;
+  margin-right: 5px;
+}
+
+button#ficha {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.tokenPlayer {
+  border-radius: 50%;
+  object-fit: cover;
+  height: 40px;
+  width: 40px;
+}

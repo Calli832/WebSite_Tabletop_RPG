@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  height: 100vh;
+}
+.menu {
+  background-color: #e6cd00;
+  border-right: 2px solid #fff;
+  display: flex;
+  padding: 0 5px;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.menu div {
+  cursor: pointer;
+}
+
+.menu .img-home {
+  position: absolute;
+  margin-top: 10%;
+}

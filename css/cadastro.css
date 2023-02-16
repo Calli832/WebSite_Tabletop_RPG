@@ -1,0 +1,145 @@
+@font-face {
+  font-family: "Unispace";
+  src: url(../assets/font/unispace/unispace\ rg.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Unispace";
+  overflow: hidden;
+}
+
+body {
+  background-color: #04182c;
+  color: white;
+}
+
+main {
+  background-image: url("../assets/img/LogCad.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  height: calc(100vh + 100px);
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+main div {
+  background-color: #0e3d6d;
+  font-size: 1.7rem;
+}
+
+main .container {
+  border-radius: 5px;
+}
+
+.div-1 {
+  display: flex;
+  justify-content: space-around;
+}
+
+main .logo {
+  padding: 4px 10px;
+  border-radius: 10px 10px 0 0;
+}
+
+.div-1 div {
+  padding: 5px;
+}
+
+.div-1 a {
+  text-decoration: none;
+  color: #fff;
+  padding: 5px;
+}
+.div-1 div:first-child a {
+  color: #dcc605;
+}
+
+.div-1 div:last-child::before {
+  content: "";
+  width: 2px;
+  height: 30px;
+  margin-left: -6px;
+  position: absolute;
+  background-color: #fff;
+}
+
+.div-2 form {
+  display: flex;
+  padding: 5px 10px;
+  flex-direction: column;
+  background-color: #dcc605;
+  color: #184468;
+}
+
+.div-2 form label {
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+.div-2 form input {
+  border: 1px solid #04182c;
+  background-color: transparent;
+  padding: 5px;
+  outline: none;
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: #0e3d6d;
+  border: none;
+  width: 100%;
+  color: #fff;
+  padding: 5px 0;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.erro-geral,
+.erro {
+  border: none;
+  background-color: #ce0e0e;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  color: #fff;
+  word-spacing: 2px;
+  font-size: 0.9rem;
+}
+
+@media (min-width: 1400px) {
+  main div {
+    font-size: 2.5rem;
+  }
+
+  .div-2 form label {
+    font-size: 2rem;
+  }
+
+  .div-2 form input {
+    padding: 10px;
+    font-size: 1.2rem;
+  }
+
+  .div-submit button {
+    font-size: 2rem;
+  }
+
+  .div-1 div:last-child::before {
+    width: 5px;
+    height: 40px;
+    margin-left: -8px;
+  }
+}
+
+@media (max-width: 1100px) {
+  main {
+    background-size: cover;
+    background-position: center;
+  }
+}

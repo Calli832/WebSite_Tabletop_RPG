@@ -1,0 +1,191 @@
+@font-face {
+  font-family: "Unispace";
+  src: url(../assets/font/unispace/unispace\ rg.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Unispace";
+  overflow: hidden;
+}
+
+::selection {
+  background-color: #3390ff;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+}
+
+.menu {
+  background-color: #e6cd00;
+  border-right: 2px solid #fff;
+  display: flex;
+  padding: 0 5px;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.menu div {
+  cursor: pointer;
+}
+
+.menu .img-home {
+  position: absolute;
+  margin-top: 10%;
+}
+
+.conteudo {
+  background-color: #04182c;
+  width: 100%;
+}
+
+.conteudo .img-top > img {
+  width: 100%;
+  height: 25vh;
+}
+
+.img-top {
+  position: relative;
+}
+
+.img-top-perfil {
+  position: absolute;
+  bottom: 4px;
+  padding: 2px 25rem 0 0;
+  background-color: #fff;
+  width: 100%;
+  font-size: 1.2rem;
+  text-align: end;
+  opacity: 0.7;
+}
+
+.conteudo-home {
+  color: #fff;
+  padding: 3rem 10rem 3rem 4rem;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.3rem;
+}
+
+.conteudo-home p {
+  border-bottom: 2px solid #fff;
+}
+
+.mapas {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.mapas p {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+.mapas .mapas-img {
+  cursor: pointer;
+  position: relative;
+}
+
+.mapas .mapas-img div {
+  position: absolute;
+  bottom: 14px;
+  background-color: #000;
+  opacity: 0.7;
+  width: 100%;
+  font-size: 0.9rem;
+  padding: 2px;
+  color: #fff;
+  text-align: center;
+}
+
+.mapas .mapas-img:nth-child(2) div,
+.mapas .mapas-img:nth-child(7) div {
+  border-radius: 0 0 0 20px;
+}
+
+.mapas .mapas-img:nth-child(3) div,
+.mapas .mapas-img:nth-child(6) div {
+  border-radius: 0 0 20px 20px;
+}
+
+.mapas .mapas-img:nth-child(4) div,
+.mapas .mapas-img:nth-child(5) div {
+  border-radius: 0 0 20px 0;
+}
+
+.sessoes {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 20px;
+}
+
+.sessoes div {
+  cursor: pointer;
+}
+.sessoes .criar-rpg {
+  border: 1px solid #fff;
+  font-size: 1.2rem;
+  padding: 5px;
+  width: 100%;
+  cursor: pointer;
+  text-align: center;
+}
+
+.sessoes .criar-rpg a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.redes {
+  font-size: 1rem;
+}
+
+.redes a {
+  text-decoration: none;
+  color: #fff;
+  transition: 0.3s;
+  border-bottom: 2px solid transparent;
+}
+
+.redes a:hover {
+  border-bottom: 2px solid #fff;
+}
+
+.redes-discord,
+.redes-twitch {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-top: 10px;
+}
+
+@media (min-width: 1400px) {
+  .conteudo-home {
+    justify-content: space-evenly;
+  }
+}
+
+@media (max-width: 1300px) {
+  * {
+    overflow: auto;
+  }
+  .conteudo-home {
+    flex-direction: column;
+  }
+
+  .mapas {
+    margin-bottom: 20px;
+  }
+
+  .sessoes .criar-rpg {
+    width: 50%;
+    margin: 0 auto;
+  }
+}

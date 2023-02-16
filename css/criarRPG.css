@@ -1,0 +1,181 @@
+@font-face {
+  font-family: "Unispace";
+  src: url(../assets/font/unispace/unispace\ rg.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Unispace";
+  overflow: hidden;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  background-color: #04182c;
+}
+
+.menu {
+  background-color: #e6cd00;
+  border-right: 2px solid #fff;
+  display: flex;
+  padding: 0 5px;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.menu div {
+  cursor: pointer;
+}
+
+.menu .img-home {
+  position: absolute;
+  margin-top: 10%;
+}
+
+.banner {
+  background: linear-gradient(lightblue 79%, rgba(255, 253, 253, 0.87) 21%);
+  width: 100vw;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+  position: relative;
+}
+
+.banner-info {
+  position: absolute;
+  left: 10rem;
+  bottom: 0;
+}
+
+.banner p {
+  font-size: 1.2rem;
+}
+
+.container {
+  display: flex;
+  padding: 50px;
+  color: white;
+  height: 100vh;
+}
+
+.container .nomePersonagem {
+  padding-right: 40px;
+  border-right: 3px solid white;
+  height: 80%;
+  width: 12vw;
+}
+
+.container .atividade {
+  padding: 10px;
+  width: 50vw;
+}
+
+.container .config {
+  margin: 0 auto;
+  border-left: 3px solid white;
+  padding: 20px;
+  height: 80%;
+  text-align: center;
+}
+
+.container .config button {
+  border: none;
+  color: #fff;
+  font-size: 1.1rem;
+  width: max-content;
+  text-align: center;
+  cursor: pointer;
+}
+
+.container .config .config-entrar {
+  border-bottom: 2px solid white;
+  padding-bottom: 10px;
+  width: 30vw;
+}
+.container .config button.entrar {
+  background-color: green;
+  width: 200px;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.container .config .config-mestre {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30vw;
+  gap: 20px;
+  border-bottom: 2px solid white;
+}
+
+.container .config .config-mestre button {
+  border-radius: 20px;
+  padding: 15px;
+  background-color: #e6cd00;
+}
+
+.container .config .config-delete {
+  padding-top: 10px;
+}
+
+.container .config .config-delete button {
+  margin-top: 15px;
+  padding: 15px;
+  background-color: #f00;
+  border-radius: 20px;
+}
+
+.oculto {
+  display: none;
+}
+
+/* MOLDAL CRIAR RPG */
+.criarRPG {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 300px;
+  height: 150px;
+  margin: auto;
+  background-color: #0e3d6d;
+  border-radius: 10px;
+}
+
+.criarRPG .nome {
+  background-color: #e6cd00;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  padding: 5px;
+}
+
+.criarRPG .input input {
+  border: 1px solid #fff;
+  background-color: transparent;
+  padding: 10px;
+  outline: none;
+  color: #fff;
+  width: 100%;
+}
+
+.criarRPG .botoes {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.criarRPG .botoes button {
+  background-color: transparent;
+  cursor: pointer;
+  padding: 5px;
+  color: #fff;
+  border: none;
+}
